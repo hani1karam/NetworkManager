@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		047CF8EC286C734400BD5938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF8EB286C734400BD5938 /* AppDelegate.swift */; };
-		047CF8EE286C734400BD5938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF8ED286C734400BD5938 /* SceneDelegate.swift */; };
-		047CF8F0286C734400BD5938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF8EF286C734400BD5938 /* ViewController.swift */; };
-		047CF8F3286C734400BD5938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CF8F1286C734400BD5938 /* Main.storyboard */; };
 		047CF8F6286C734400BD5938 /* NetworkManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 047CF8F4286C734400BD5938 /* NetworkManager.xcdatamodeld */; };
 		047CF8F8286C734700BD5938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047CF8F7286C734700BD5938 /* Assets.xcassets */; };
 		047CF8FB286C734700BD5938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047CF8F9286C734700BD5938 /* LaunchScreen.storyboard */; };
 		047CF906286C734800BD5938 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF905286C734800BD5938 /* NetworkManagerTests.swift */; };
 		047CF910286C734800BD5938 /* NetworkManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF90F286C734800BD5938 /* NetworkManagerUITests.swift */; };
 		047CF912286C734800BD5938 /* NetworkManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF911286C734800BD5938 /* NetworkManagerUITestsLaunchTests.swift */; };
+		047CF920286C73DA00BD5938 /* DataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF91F286C73DA00BD5938 /* DataProviderProtocol.swift */; };
+		047CF922286C73EB00BD5938 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF921286C73EB00BD5938 /* RequestProtocol.swift */; };
+		047CF924286C73FB00BD5938 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CF923286C73FB00BD5938 /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,6 @@
 /* Begin PBXFileReference section */
 		047CF8E8286C734400BD5938 /* NetworkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047CF8EB286C734400BD5938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		047CF8ED286C734400BD5938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		047CF8EF286C734400BD5938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		047CF8F2286C734400BD5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		047CF8F5286C734400BD5938 /* NetworkManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetworkManager.xcdatamodel; sourceTree = "<group>"; };
 		047CF8F7286C734700BD5938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047CF8FA286C734700BD5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,9 @@
 		047CF90B286C734800BD5938 /* NetworkManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047CF90F286C734800BD5938 /* NetworkManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerUITests.swift; sourceTree = "<group>"; };
 		047CF911286C734800BD5938 /* NetworkManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047CF91F286C73DA00BD5938 /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
+		047CF921286C73EB00BD5938 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		047CF923286C73FB00BD5938 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,8 @@
 		047CF8EA286C734400BD5938 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				047CF91E286C738800BD5938 /* NetworkManager */,
 				047CF8EB286C734400BD5938 /* AppDelegate.swift */,
-				047CF8ED286C734400BD5938 /* SceneDelegate.swift */,
-				047CF8EF286C734400BD5938 /* ViewController.swift */,
-				047CF8F1286C734400BD5938 /* Main.storyboard */,
 				047CF8F7286C734700BD5938 /* Assets.xcassets */,
 				047CF8F9286C734700BD5938 /* LaunchScreen.storyboard */,
 				047CF8FC286C734700BD5938 /* Info.plist */,
@@ -128,6 +126,16 @@
 				047CF911286C734800BD5938 /* NetworkManagerUITestsLaunchTests.swift */,
 			);
 			path = NetworkManagerUITests;
+			sourceTree = "<group>";
+		};
+		047CF91E286C738800BD5938 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				047CF91F286C73DA00BD5938 /* DataProviderProtocol.swift */,
+				047CF921286C73EB00BD5938 /* RequestProtocol.swift */,
+				047CF923286C73FB00BD5938 /* SessionManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 047CF8DF286C734400BD5938;
+			packageReferences = (
+				047CF925286C746700BD5938 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 047CF8E9286C734400BD5938 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +247,6 @@
 			files = (
 				047CF8FB286C734700BD5938 /* LaunchScreen.storyboard in Resources */,
 				047CF8F8286C734700BD5938 /* Assets.xcassets in Resources */,
-				047CF8F3286C734400BD5938 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				047CF8F6286C734400BD5938 /* NetworkManager.xcdatamodeld in Sources */,
-				047CF8F0286C734400BD5938 /* ViewController.swift in Sources */,
+				047CF920286C73DA00BD5938 /* DataProviderProtocol.swift in Sources */,
 				047CF8EC286C734400BD5938 /* AppDelegate.swift in Sources */,
-				047CF8EE286C734400BD5938 /* SceneDelegate.swift in Sources */,
+				047CF924286C73FB00BD5938 /* SessionManager.swift in Sources */,
+				047CF922286C73EB00BD5938 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		047CF8F1286C734400BD5938 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				047CF8F2286C734400BD5938 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		047CF8F9286C734700BD5938 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,9 +451,10 @@
 				INFOPLIST_FILE = NetworkManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,9 +480,10 @@
 				INFOPLIST_FILE = NetworkManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -608,6 +613,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		047CF925286C746700BD5938 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 4.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		047CF8F4286C734400BD5938 /* NetworkManager.xcdatamodeld */ = {
